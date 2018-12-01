@@ -1,9 +1,0 @@
-
-[
-squid:S106G"9Replace this use of System.out or System.err by a logger.(¾ÄÀ¬øÿÿÿÿ8Ù·¢Ôö,
-usquid:S3776U"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(Çàçşøÿÿÿÿ8¬¼‚Õö,
-V
-squid:S106""9Replace this use of System.out or System.err by a logger.(“¨¯æ8ÅøÌÔö,
-[
-squid:S106|"9Replace this use of System.out or System.err by a logger.(¾ÄÀ¬øÿÿÿÿ8ïñÔö,
-]squid:UselessImportCheck"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8ğÀŠÔö,
