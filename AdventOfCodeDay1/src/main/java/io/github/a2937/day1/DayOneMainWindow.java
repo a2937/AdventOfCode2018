@@ -55,7 +55,7 @@ public class DayOneMainWindow extends JFrame {
 			{
 				if(new File(textField.getText()).exists())
 				{
-				    String fileContents = FrequencyCalculator.readValuesFromFile(textField.getText());
+				    String fileContents = FileReader.readValuesFromFile(textField.getText());
 					lblOutput.setText("Output: \n Summation: " + FrequencyCalculator.calculateFrequency(fileContents,'\n'));
 				}
 				else

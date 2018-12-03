@@ -2,6 +2,7 @@ package io.github.a2937;
 
 import com.google.common.io.Files;
 import com.google.common.io.Resources;
+import io.github.a2937.day1.FileReader;
 import io.github.a2937.day1.FrequencyCalculator;
 import org.junit.*;
 import org.junit.rules.TemporaryFolder;
@@ -52,7 +53,7 @@ public void testReadValuesFromFile() throws Exception
 
     File file = createTmpFileFromResource(temporaryFolder,"input.txt");
 
-    String fileContents = FrequencyCalculator.readValuesFromFile(file.getAbsolutePath());
+    String fileContents = FileReader.readValuesFromFile(file.getAbsolutePath());
 
     Assert.assertNotEquals(fileContents,null);
     Assert.assertFalse(fileContents.isEmpty());

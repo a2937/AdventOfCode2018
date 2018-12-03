@@ -31,7 +31,7 @@ public class Day1Driver
                 {
                     System.out.println("Type the complete path to a file where on each line is a value that you want summed.");
                     String filePath = scanner.nextLine();
-                    String values = FrequencyCalculator.readValuesFromFile(filePath);
+                    String values = FileReader.readValuesFromFile(filePath);
                     System.out.println("The sum of these values is " + FrequencyCalculator.calculateFrequency(values,'\n'));
                     System.out.println("Generating extra info. Please be patient as may take a few minutes.");
                     System.out.println("If these values were added together over and over again until another sum was found, that sum would be " +

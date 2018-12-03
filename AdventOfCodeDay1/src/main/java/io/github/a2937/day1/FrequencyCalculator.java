@@ -19,29 +19,13 @@ public class FrequencyCalculator
         throw new IllegalStateException("Utility class");
     }
 
-    public static String readValuesFromFile(String fileLocation)
-    {
-        StringBuilder fileContents = new StringBuilder();
-        try (Scanner scanner = new Scanner(new File(fileLocation)))
-        {
-            while(scanner.hasNext())
-            {
-                fileContents.append(scanner.next()).append("\n");
-            }
-        }
-        catch (FileNotFoundException e)
-        {
-            System.err.println(fileLocation + " not found.");
-        }
-        return fileContents.toString();
-    }
-
 
 
     /**
      * Calculate the combined frequency
      * in accordance with the problem, where the initial charge
      * is zero.
+     *
      * @param input     the input
      * @param separator the separator for the values
      * @return the net charge
@@ -78,6 +62,7 @@ public class FrequencyCalculator
      * A method that returns the first charge on the device that
      * duplicates. It will loop through the inputs until a
      * second occurrence of a net charge is found.
+     *
      * @param input     the input
      * @param separator the separator for the values
      * @return the duplicated net charge
