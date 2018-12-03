@@ -21,6 +21,7 @@ public class FileReader
         {
             while(scanner.hasNextLine())
             {
+                fileContents.append(scanner.nextLine()).append("\n");
             }
         }
         catch (FileNotFoundException e)
