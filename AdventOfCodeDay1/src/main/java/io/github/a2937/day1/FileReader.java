@@ -19,9 +19,8 @@ public class FileReader
         StringBuilder fileContents = new StringBuilder();
         try (Scanner scanner = new Scanner(new File(fileLocation)))
         {
-            while(scanner.hasNext())
+            while(scanner.hasNextLine())
             {
-                fileContents.append(scanner.next()).append("\n");
             }
         }
         catch (FileNotFoundException e)
